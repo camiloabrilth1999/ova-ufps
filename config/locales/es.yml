@@ -1,0 +1,65 @@
+es:
+  seeds:
+    chapters:
+      first:
+        lessons:
+          first:
+            lesson_contents:
+              first:
+                content:
+                  title: 'Bienvenido a Java'
+                  desc:
+                    first_paragraph: 'Java es un lenguaje de programación moderno y de alto nivel diseñado a principios de los años 90 por Sun Microsystems, y actualmente propiedad de Oracle.'
+                    second_paragraph: 'Java es independiente de la plataforma, lo que significa que sólo hay que escribir el programa una vez para poder ejecutarlo en varias plataformas diferentes.
+Java es portátil, robusto y dinámico, con la capacidad de adaptarse a las necesidades de prácticamente cualquier tipo de aplicación.
+Java le garantiza que podrá escribir una vez y ejecutar en cualquier lugar
+'
+              second:
+                content:
+                  title: 'Java'
+                  desc:
+                    first_paragraph: 'Más de 3.000 millones de dispositivos funcionan con Java.'
+                    second_paragraph: 'Java se utiliza para desarrollar aplicaciones para el sistema operativo Android de Google, diversas aplicaciones de escritorio, como reproductores multimedia, programas antivirus, aplicaciones web, aplicaciones empresariales (por ejemplo, bancarias), ¡y muchas más!'
+          second:
+            lesson_contents:
+              first:
+                content:
+                  title: 'Tu primer programa Java'
+                  desc:
+                    first_paragraph: 'Empecemos por crear un programa sencillo que imprima "Hola Mundo" en la pantalla.'
+                    first_code: 'class MyClass {
+                        public static void main(String[ ] args) {
+                          System.out.println("Hello World");
+                        }
+                      }
+                      '                      
+                    second_paragraph: 'En Java, cada línea de código que pueda ejecutarse debe estar dentro de una clase.
+En nuestro ejemplo, hemos llamado a la clase MyClass. Aprenderás más sobre las clases en los próximos módulos.
+'
+                    third_paragraph: 'En Java, cada aplicación tiene un punto de entrada, o un punto de partida, que es un método llamado main. Junto con main, las palabras clave public y static también se explicarán más adelante.'
+                    fourth_paragraph: 'A modo de resumen:
+- Todo programa en Java debe tener una clase.
+- Todo programa en Java comienza con el método main.
+'
+              second:
+                content:
+                  title: 'El método main'
+                  desc:
+              third:
+                content:
+                  title: 'System.out.println()'
+                  desc:
+              fourth:
+                content:
+                  title: 'Punto y coma en Java'
+                  desc:
+          third:
+          fourth:
+          fifth:
+          sixth:
+          seventh:
+          eighth:
+      second:
+      third:
+      fourth:
+

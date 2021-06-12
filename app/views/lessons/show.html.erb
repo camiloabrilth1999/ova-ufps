@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-12">
+    <h1><%="#{@chapter.order}.#{@lesson.order}. #{@lesson.title}" %></h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <% @lesson_contents.each do |lesson_content| %>
+    <h2><%=lesson_content.content["title"]%></h2>
+    <%= render "lessons/shared/desc", desc: lesson_content.content["desc"] %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="col-sm-6 flex">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><%= "#{chapter.order}. #{chapter.title}" %></h5>
+      <p class="card-text"><%= chapter.description %></p>
+      <%= link_to "Ir al capitulo", chapter_lessons_path(chapter), class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

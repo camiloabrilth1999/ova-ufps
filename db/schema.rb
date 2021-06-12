@@ -10,21 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_12_155547) do
+ActiveRecord::Schema.define(version: 2021_06_12_195542) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "chapters", force: :cascade do |t|
     t.string "title"
+    t.integer "order"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "lesson_contents", force: :cascade do |t|
+    t.jsonb "content"
+    t.integer "order"
+    t.bigint "lesson_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["lesson_id"], name: "index_lesson_contents_on_lesson_id"
+  end
+
   create_table "lessons", force: :cascade do |t|
     t.string "title"
-    t.text "content"
+    t.integer "order"
     t.bigint "chapter_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -76,6 +86,7 @@ ActiveRecord::Schema.define(version: 2021_06_12_155547) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "lesson_contents", "lessons"
   add_foreign_key "lessons", "chapters"
   add_foreign_key "user_chapters", "chapters"
   add_foreign_key "user_chapters", "users"

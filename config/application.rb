@@ -18,5 +18,8 @@ module OvaUfps
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    
+    I18n.available_locales = [:en, :es]
+    I18n.default_locale = :es
   end
 end
