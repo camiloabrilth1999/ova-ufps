@@ -9,38 +9,34 @@ es:
                 content:
                   title: 'Bienvenido a Java'
                   desc:
-                    first_paragraph: 'Java es un lenguaje de programación moderno y de alto nivel diseñado a principios de los años 90 por Sun Microsystems, y actualmente propiedad de Oracle.'
-                    second_paragraph: 'Java es independiente de la plataforma, lo que significa que sólo hay que escribir el programa una vez para poder ejecutarlo en varias plataformas diferentes.
+                    first_paragraph: '<p>Java es un lenguaje de programación moderno y de alto nivel diseñado a principios de los años 90 por Sun Microsystems, y actualmente propiedad de Oracle.</p>'
+                    second_paragraph: '<p>Java es independiente de la plataforma, lo que significa que sólo hay que escribir el programa una vez para poder ejecutarlo en varias plataformas diferentes.
 Java es portátil, robusto y dinámico, con la capacidad de adaptarse a las necesidades de prácticamente cualquier tipo de aplicación.
-Java le garantiza que podrá escribir una vez y ejecutar en cualquier lugar
-'
+Java le garantiza que podrá escribir una vez y ejecutar en cualquier lugar</p>'
               second:
                 content:
                   title: 'Java'
                   desc:
-                    first_paragraph: 'Más de 3.000 millones de dispositivos funcionan con Java.'
-                    second_paragraph: 'Java se utiliza para desarrollar aplicaciones para el sistema operativo Android de Google, diversas aplicaciones de escritorio, como reproductores multimedia, programas antivirus, aplicaciones web, aplicaciones empresariales (por ejemplo, bancarias), ¡y muchas más!'
+                    first_paragraph: '<p>Más de 3.000 millones de dispositivos funcionan con Java.</p>'
+                    second_paragraph: '<p>Java se utiliza para desarrollar aplicaciones para el sistema operativo Android de Google, diversas aplicaciones de escritorio, como reproductores multimedia, programas antivirus, aplicaciones web, aplicaciones empresariales (por ejemplo, bancarias), ¡y muchas más!</p>'
           second:
             lesson_contents:
               first:
                 content:
                   title: 'Tu primer programa Java'
                   desc:
-                    first_paragraph: 'Empecemos por crear un programa sencillo que imprima "Hola Mundo" en la pantalla.'
-                    first_code: 'class MyClass {
-                        public static void main(String[ ] args) {
-                          System.out.println("Hello World");
-                        }
-                      }
-                      '                      
-                    second_paragraph: 'En Java, cada línea de código que pueda ejecutarse debe estar dentro de una clase.
-En nuestro ejemplo, hemos llamado a la clase MyClass. Aprenderás más sobre las clases en los próximos módulos.
-'
-                    third_paragraph: 'En Java, cada aplicación tiene un punto de entrada, o un punto de partida, que es un método llamado main. Junto con main, las palabras clave public y static también se explicarán más adelante.'
-                    fourth_paragraph: 'A modo de resumen:
-- Todo programa en Java debe tener una clase.
-- Todo programa en Java comienza con el método main.
-'
+                    first_paragraph: '<p>Empecemos por crear un programa sencillo que imprima "Hola Mundo" en la pantalla.</p>'
+                    first_code: '<div><code> <p>class MyClass {</p>
+                        <p style="text-indent: 1%">public static void main(String[ ] args) {</p>
+                          <p style="text-indent: 2%">System.out.println("Hello World");</p>
+                        <p style="text-indent: 1%">}</p>
+                      <p>}</p></code></div>'
+                    second_paragraph: '<p>En Java, cada línea de código que pueda ejecutarse debe estar dentro de una clase.
+En nuestro ejemplo, hemos llamado a la clase MyClass. Aprenderás más sobre las clases en los próximos módulos</p>.'
+                    third_paragraph: '<p>En Java, cada aplicación tiene un punto de entrada, o un punto de partida, que es un método llamado main. Junto con main, las palabras clave public y static también se explicarán más adelante.</p>'
+                    fourth_paragraph: '<p>A modo de resumen:<br/>
+- Todo programa en Java debe tener una clase.<br/>
+- Todo programa en Java comienza con el método main.</p>'
               second:
                 content:
                   title: 'El método main'

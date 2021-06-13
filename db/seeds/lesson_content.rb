@@ -13,8 +13,8 @@ path_seed_chapters = 'seeds.chapters'
 
 LessonContent.create!(order: 1, lesson_id: chapter_one_lessons.find_by_order(1).id, content: { title: I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.first.content.title"),
   desc: [
-    [ I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.first.content.desc.first_paragraph") , 'p'],
-    [ I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.first.content.desc.second_paragraph") , 'p']
+    I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.first.content.desc.first_paragraph"),
+    I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.first.content.desc.second_paragraph")
   ]
 })
 
@@ -22,8 +22,8 @@ LessonContent.create!(order: 1, lesson_id: chapter_one_lessons.find_by_order(1).
 
 LessonContent.create!(order: 2, lesson_id: chapter_one_lessons.find_by_order(1).id, content: { title: I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.second.content.title"),
   desc: [
-    [ I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.second.content.desc.first_paragraph") , 'p'],
-    [ I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.second.content.desc.second_paragraph") , 'p']
+    I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.second.content.desc.first_paragraph"),
+    I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.second.content.desc.second_paragraph")
   ]
 })
 
@@ -33,11 +33,11 @@ LessonContent.create!(order: 2, lesson_id: chapter_one_lessons.find_by_order(1).
 
 LessonContent.create!(order: 1, lesson_id: chapter_one_lessons.find_by_order(2).id, content: { title: I18n.t("#{path_seed_chapters}.first.lessons.second.lesson_contents.first.content.title"),
   desc: [
-    [ I18n.t("#{path_seed_chapters}.first.lessons.second.lesson_contents.first.content.desc.first_paragraph") , 'p'],
-    [ I18n.t("#{path_seed_chapters}.first.lessons.second.lesson_contents.first.content.desc.first_code") , 'c'],
-    [ I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.first.content.desc.second_paragraph") , 'p'],
-    [ I18n.t("#{path_seed_chapters}.first.lessons.second.lesson_contents.first.content.desc.third_paragraph") , 'p'],
-    [ I18n.t("#{path_seed_chapters}.first.lessons.second.lesson_contents.first.content.desc.fourth_paragraph") , 'p']
+     I18n.t("#{path_seed_chapters}.first.lessons.second.lesson_contents.first.content.desc.first_paragraph"),
+     I18n.t("#{path_seed_chapters}.first.lessons.second.lesson_contents.first.content.desc.first_code"),
+     I18n.t("#{path_seed_chapters}.first.lessons.first.lesson_contents.first.content.desc.second_paragraph"),
+     I18n.t("#{path_seed_chapters}.first.lessons.second.lesson_contents.first.content.desc.third_paragraph"),
+     I18n.t("#{path_seed_chapters}.first.lessons.second.lesson_contents.first.content.desc.fourth_paragraph")
   ]
 })
 
