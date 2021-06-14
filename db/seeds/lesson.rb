@@ -36,8 +36,6 @@ Lesson.create!(title: 'Modificadores de acceso', order: 7, chapter_id: four_chap
 Lesson.create!(title: 'Getters y Setters', order: 8, chapter_id: four_chapter_id)
 Lesson.create!(title: 'Constructores', order: 9, chapter_id: four_chapter_id)
 Lesson.create!(title: 'Tipos de valor y referenciados', order: 10, chapter_id: four_chapter_id)
-Lesson.create!(title: 'La clase Math', order: 11, chapter_id: four_chapter_id)
-Lesson.create!(title: 'Static', order: 12, chapter_id: four_chapter_id)
-Lesson.create!(title: 'Final', order: 13, chapter_id: four_chapter_id)
-Lesson.create!(title: 'Paquetes', order: 14, chapter_id: four_chapter_id)
-
+Lesson.create!(title: 'Static', order: 11, chapter_id: four_chapter_id)
+Lesson.create!(title: 'Final', order: 12, chapter_id: four_chapter_id)
+Lesson.create!(title: 'Paquetes', order: 13, chapter_id: four_chapter_id)
