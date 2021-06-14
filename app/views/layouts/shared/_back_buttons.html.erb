@@ -1,0 +1,17 @@
+<% if controller_name != 'chapters' %>
+<% if controller_name == 'lessons' %>
+<% if params[:action] == 'show' %>
+<div class="row">
+  <div class="col-12">
+    <%= link_to "Atrás", chapter_lessons_path %>
+  </div>
+</div>
+<% elsif params[:action] == 'index' %>
+<div class="row">
+  <div class="col-12">
+    <%= link_to "Atrás", chapters_path %>
+  </div>
+</div>
+<% end %>
+<% end %>
+<% end %>

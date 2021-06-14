@@ -10,7 +10,6 @@
         <li class="nav-item">
         <%= link_to("Inicio", authenticated_root_path, html_options = {class: "nav-link"}) %>
         </li>
- 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Capítulos
@@ -22,6 +21,11 @@
           </ul>
         </li>
       </ul>
+    </div>
+    <div>
+      <ul class="navbar-nav navbar-right">
+      <li class="nav-item"><%= link_to("Cerrar sesión", destroy_user_session_path, method: :delete, class: "btn btn-danger") %></
+    </ul>
     </div>
   </div>
 </nav>
