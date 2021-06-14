@@ -1,12 +1,12 @@
 chapter_one_lessons = Chapter.find_by_order(1).lessons
 chapter_two_lessons = Chapter.find_by_order(2).lessons
-chapter_three_lessons = Chapter.find_by_order(3).lessons
-chapter_four_lessons = Chapter.find_by_order(4).lessons
+# chapter_three_lessons = Chapter.find_by_order(3).lessons
+# chapter_four_lessons = Chapter.find_by_order(4).lessons
 
 path_seed_chapter_one = 'seeds.chapters.basic_concepts.lessons'
 path_seed_chapter_two = 'seeds.chapters.conditionals_loops.lessons'
-path_seed_chapter_three = 'seeds.chapters.arrays.lessons'
-path_seed_chapter_four = 'seeds.chapters.classes_objects.lessons'
+# path_seed_chapter_three = 'seeds.chapters.arrays.lessons'
+# path_seed_chapter_four = 'seeds.chapters.classes_objects.lessons'
 
 # Capitulo 1: basic_concepts #
 

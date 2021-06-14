@@ -8,7 +8,7 @@ class LessonsController < ApplicationController
   end
 
   def show
-    @lesson_contents = @lesson.lesson_contents
+    @lesson_contents = @lesson.lesson_contents.order(:order)
   end
 
   private
