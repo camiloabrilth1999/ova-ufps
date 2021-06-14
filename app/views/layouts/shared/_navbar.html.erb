@@ -1,20 +1,25 @@
 <% if user_signed_in? %>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <%= link_to("OVA-UFPS", authenticated_root_path, html_options = {class: "navbar-brand"}) %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <%= link_to("Inicio", authenticated_root_path, html_options = {class: "nav-link"}) %>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+ 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Capítulos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">            
+            <% Chapter.all.each do |chapter|%>
+            <li><%= link_to "#{chapter.order}. #{chapter.title}", chapter_lessons_path(chapter), html_options = {class: "dropdown-item"}%></li>
+            <% end %>
+          </ul>
         </li>
       </ul>
     </div>
