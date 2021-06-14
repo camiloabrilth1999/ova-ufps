@@ -124,5 +124,76 @@ LessonContent.create!(order: 3, lesson_id: chapter_one_lessons.find_by_order(7).
 LessonContent.create!(order: 1, lesson_id: chapter_one_lessons.find_by_order(8).id, content: { title: I18n.t("#{path_seed_chapter_one}.strings.lesson_contents.strings.content.title"), desc: I18n.t("#{path_seed_chapter_one}.strings.lesson_contents.strings.content.desc")
 })
 # path_seed_chapter_one.strings.lesson_contents.string_concatenation.content.
-LessonContent.create!(order: 1, lesson_id: chapter_one_lessons.find_by_order(8).id, content: { title: I18n.t("#{path_seed_chapter_one}.strings.lesson_contents.string_concatenation.content.title"), desc: I18n.t("#{path_seed_chapter_one}.strings.lesson_contents.string_concatenation.content.desc")
+LessonContent.create!(order: 2, lesson_id: chapter_one_lessons.find_by_order(8).id, content: { title: I18n.t("#{path_seed_chapter_one}.strings.lesson_contents.string_concatenation.content.title"), desc: I18n.t("#{path_seed_chapter_one}.strings.lesson_contents.string_concatenation.content.desc")
+})
+
+# Capitulo 2: conditionals_loops #
+
+# Leccion 1: conditional_statements
+
+# decision_making
+# path_seed_chapter_two.conditional_statements.lesson_contents.decision_making.content.
+LessonContent.create!(order: 1, lesson_id: chapter_two_lessons.find_by_order(1).id, content: { title: I18n.t("#{path_seed_chapter_two}.conditional_statements.lesson_contents.decision_making.content.title"), desc: I18n.t("#{path_seed_chapter_two}.conditional_statements.lesson_contents.decision_making.content.desc")
+})
+
+# if_else_statements
+# path_seed_chapter_two.conditional_statements.lesson_contents.if_else_statements.content.
+LessonContent.create!(order: 2, lesson_id: chapter_two_lessons.find_by_order(1).id, content: { title: I18n.t("#{path_seed_chapter_two}.conditional_statements.lesson_contents.if_else_statements.content.title"), desc: I18n.t("#{path_seed_chapter_two}.conditional_statements.lesson_contents.if_else_statements.content.desc")
+})
+
+# Leccion 2: nested_if_statements
+
+# path_seed_chapter_two.nested_if_statements.lesson_contents.nested_if_statements.content.
+LessonContent.create!(order: 1, lesson_id: chapter_two_lessons.find_by_order(2).id, content: { title: I18n.t("#{path_seed_chapter_two}.nested_if_statements.lesson_contents.nested_if_statements.content.title"), desc: I18n.t("#{path_seed_chapter_two}.nested_if_statements.lesson_contents.nested_if_statements.content.desc")
+})
+
+# Leccion 3: else_if_statement
+
+# path_seed_chapter_two.else_if_statement.lesson_contents.else_if_statement.content.
+LessonContent.create!(order: 1, lesson_id: chapter_two_lessons.find_by_order(3).id, content: { title: I18n.t("#{path_seed_chapter_two}.else_if_statement.lesson_contents.else_if_statement.content.title"), desc: I18n.t("#{path_seed_chapter_two}.else_if_statement.lesson_contents.else_if_statement.content.desc")
+})
+
+# Leccion 4: logical_statements
+
+# path_seed_chapter_two.logical_statements.lesson_contents.logical_operators.content.
+LessonContent.create!(order: 1, lesson_id: chapter_two_lessons.find_by_order(4).id, content: { title: I18n.t("#{path_seed_chapter_two}.logical_statements.lesson_contents.logical_operators.content.title"), desc: I18n.t("#{path_seed_chapter_two}.logical_statements.lesson_contents.logical_operators.content.desc")
+})
+
+# path_seed_chapter_two.logical_statements.lesson_contents.or_operator.content.
+LessonContent.create!(order: 2, lesson_id: chapter_two_lessons.find_by_order(4).id, content: { title: I18n.t("#{path_seed_chapter_two}.logical_statements.lesson_contents.or_operator.content.title"), desc: I18n.t("#{path_seed_chapter_two}.logical_statements.lesson_contents.or_operator.content.desc")
+})
+
+# Leccion 5: switch_statement
+
+# path_seed_chapter_two.switch_statement.lesson_contents.switch_statement.content.
+LessonContent.create!(order: 1, lesson_id: chapter_two_lessons.find_by_order(5).id, content: { title: I18n.t("#{path_seed_chapter_two}.switch_statement.lesson_contents.switch_statement.content.title"), desc: I18n.t("#{path_seed_chapter_two}.switch_statement.lesson_contents.switch_statement.content.desc")
+})
+
+# path_seed_chapter_two.switch_statement.lesson_contents.default_statement.content.
+LessonContent.create!(order: 2, lesson_id: chapter_two_lessons.find_by_order(5).id, content: { title: I18n.t("#{path_seed_chapter_two}.switch_statement.lesson_contents.default_statement.content.title"), desc: I18n.t("#{path_seed_chapter_two}.switch_statement.lesson_contents.default_statement.content.desc")
+})
+# path_seed_chapter_two.switch_statement.lesson_contents.switch_expression.content.
+LessonContent.create!(order: 3, lesson_id: chapter_two_lessons.find_by_order(5).id, content: { title: I18n.t("#{path_seed_chapter_two}.switch_statement.lesson_contents.switch_expression.content.title"), desc: I18n.t("#{path_seed_chapter_two}.switch_statement.lesson_contents.switch_expression.content.desc")
+})
+
+# Leccion 6: loops_while
+
+# path_seed_chapter_two.loops_while.lesson_contents.loops_while.content.
+LessonContent.create!(order: 1, lesson_id: chapter_two_lessons.find_by_order(6).id, content: { title: I18n.t("#{path_seed_chapter_two}.loops_while.lesson_contents.loops_while.content.title"), desc: I18n.t("#{path_seed_chapter_two}.loops_while.lesson_contents.loops_while.content.desc")
+})
+
+# Leccion 7: loops_for
+
+# path_seed_chapter_two.loops_for.lesson_contents.loops_for.content.
+LessonContent.create!(order: 1, lesson_id: chapter_two_lessons.find_by_order(7).id, content: { title: I18n.t("#{path_seed_chapter_two}.loops_for.lesson_contents.loops_for.content.title"), desc: I18n.t("#{path_seed_chapter_two}.loops_for.lesson_contents.loops_for.content.desc")
+})
+
+# Leccion 8: loops_do_while
+
+# path_seed_chapter_two.loops_do_while.lesson_contents.loops_do_while.content.
+LessonContent.create!(order: 1, lesson_id: chapter_two_lessons.find_by_order(8).id, content: { title: I18n.t("#{path_seed_chapter_two}.loops_do_while.lesson_contents.loops_do_while.content.title"), desc: I18n.t("#{path_seed_chapter_two}.loops_do_while.lesson_contents.loops_do_while.content.desc")
+})
+
+# path_seed_chapter_two.loops_do_while.lesson_contents.loop_control_statements.content.
+LessonContent.create!(order: 2, lesson_id: chapter_two_lessons.find_by_order(8).id, content: { title: I18n.t("#{path_seed_chapter_two}.loops_do_while.lesson_contents.loop_control_statements.content.title"), desc: I18n.t("#{path_seed_chapter_two}.loops_do_while.lesson_contents.loop_control_statements.content.desc")
 })
