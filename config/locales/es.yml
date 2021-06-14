@@ -1,61 +1,117 @@
 es:
   seeds:
     chapters:
-      first:
+      basic_concepts:
         lessons:
-          first:
+          introduction_java:
             lesson_contents:
-              first:
+              welcome_java:
                 content:
                   title: 'Bienvenido a Java'
-                  desc:
-                    first_paragraph: '<p>Java es un lenguaje de programación moderno y de alto nivel diseñado a principios de los años 90 por Sun Microsystems, y actualmente propiedad de Oracle.</p>'
-                    second_paragraph: '<p>Java es independiente de la plataforma, lo que significa que sólo hay que escribir el programa una vez para poder ejecutarlo en varias plataformas diferentes.
-Java es portátil, robusto y dinámico, con la capacidad de adaptarse a las necesidades de prácticamente cualquier tipo de aplicación.
-Java le garantiza que podrá escribir una vez y ejecutar en cualquier lugar</p>'
-              second:
+                  desc: '<p>Java es un lenguaje de programación moderno y de alto nivel diseñado a principios de los años 90 por Sun Microsystems, y actualmente propiedad de Oracle.</p><p>Java es independiente de la plataforma, lo que significa que sólo hay que escribir el programa una vez para poder ejecutarlo en varias plataformas diferentes. Java es portátil, robusto y dinámico, con la capacidad de adaptarse a las necesidades de prácticamente cualquier tipo de aplicación. Java le garantiza que podrá escribir una vez y ejecutar en cualquier lugar</p>'
+              java:
                 content:
                   title: 'Java'
-                  desc:
-                    first_paragraph: '<p>Más de 3.000 millones de dispositivos funcionan con Java.</p>'
-                    second_paragraph: '<p>Java se utiliza para desarrollar aplicaciones para el sistema operativo Android de Google, diversas aplicaciones de escritorio, como reproductores multimedia, programas antivirus, aplicaciones web, aplicaciones empresariales (por ejemplo, bancarias), ¡y muchas más!</p>'
-          second:
+                  desc: '<p>Más de 3.000 millones de dispositivos funcionan con Java.</p><p>Java se utiliza para desarrollar aplicaciones para el sistema operativo Android de Google, diversas aplicaciones de escritorio, como reproductores multimedia, programas antivirus, aplicaciones web, aplicaciones empresariales (por ejemplo, bancarias), ¡y muchas más!</p>'
+          a_hello_world_program:
             lesson_contents:
-              first:
+              your_first_java_program:
                 content:
                   title: 'Tu primer programa Java'
-                  desc:
-                    first_paragraph: '<p>Empecemos por crear un programa sencillo que imprima "Hola Mundo" en la pantalla.</p>'
-                    first_code: '<div><code> <p>class MyClass {</p>
-                        <p style="text-indent: 1%">public static void main(String[ ] args) {</p>
-                          <p style="text-indent: 2%">System.out.println("Hello World");</p>
-                        <p style="text-indent: 1%">}</p>
-                      <p>}</p></code></div>'
-                    second_paragraph: '<p>En Java, cada línea de código que pueda ejecutarse debe estar dentro de una clase.
-En nuestro ejemplo, hemos llamado a la clase MyClass. Aprenderás más sobre las clases en los próximos módulos</p>.'
-                    third_paragraph: '<p>En Java, cada aplicación tiene un punto de entrada, o un punto de partida, que es un método llamado main. Junto con main, las palabras clave public y static también se explicarán más adelante.</p>'
-                    fourth_paragraph: '<p>A modo de resumen:<br/>
-- Todo programa en Java debe tener una clase.<br/>
-- Todo programa en Java comienza con el método main.</p>'
-              second:
+                  desc: '<p>Empecemos por crear un programa sencillo que imprima "Hola Mundo" en la pantalla.</p><div><code><p>class MyClass {</p><p style="text-indent: 1%">public static void main(String[ ] args) {</p><p style="text-indent: 2%">System.out.println("Hello World");</p><p style="text-indent: 1%">}</p><p>}</p></code></div><p>En Java, cada línea de código que pueda ejecutarse debe estar dentro de una clase. En nuestro ejemplo, hemos llamado a la clase MyClass. Aprenderás más sobre las clases en los próximos módulos.</p><p>En Java, cada aplicación tiene un punto de entrada, o un punto de partida, que es un método llamado main. Junto con main, las palabras clave public y static también se explicarán más adelante.</p><p>A modo de resumen:<br/> - Todo programa en Java debe tener una clase.<br/> - Todo programa en Java comienza con el método main.</p>'
+              the_main_method:
                 content:
                   title: 'El método main'
-                  desc:
-              third:
+                  desc: '<p>Para ejecutar nuestro programa, el método principal debe ser idéntico a esta firma:</p><div><code><p>public static void main(String[ ] args)</p></code></div><p>- público: cualquiera puede acceder a él<br/> - static: el método puede ejecutarse sin crear una instancia de la clase que contiene el método principal<br/>- void: el método no devuelve ningún valor<br/> - main: el nombre del método<br/></p><p>Por ejemplo, el siguiente código declara un método llamado test, que no devuelve nada y no tiene parámetros:</p><div><code><p>void test()</p></code></div><p>Los parámetros del método se declaran dentro de los paréntesis que siguen al nombre del método. <br/>En el caso de main, es un array de cadenas llamado args. Lo usaremos en nuestra próxima lección, así que no te preocupes si no lo entiendes todo ahora.</p>'
+              system_out_println:
                 content:
                   title: 'System.out.println()'
-                  desc:
-              fourth:
+                  desc: '<p>A continuación está el cuerpo del método main, delimitado entre llaves:</p><div><code><p>{</p> <p>System.out.println("Hello World!");</p><p>}</p></code></div><p>El método println imprime una línea de texto en la pantalla. <br/>La clase System y su flujo de salida se utilizan para acceder al método println.</p><p>En las clases, métodos y otras estructuras de control de flujo, el código siempre se encierra entre llaves { }.</p>'
+              semicolon_in_java:
                 content:
                   title: 'Punto y coma en Java'
-                  desc:
-          third:
-          fourth:
-          fifth:
-          sixth:
-          seventh:
-          eighth:
-      second:
-      third:
-      fourth:
-
+                  desc: '<p>Puedes pasar un texto diferente como parámetro al método println para imprimirlo.</p><div><code><p>class MyClass {</p> <p style="text-indent: 1%">public static void main(String[ ] args) {</p> <p style="text-indent: 2%">System.out.println("I am learning Java");</p> <p style="text-indent: 1%">}</p><p>}</p></code></div><p>En Java, cada declaración de código debe terminar con un punto y coma.</p><p>Recuerde: no use punto y coma después de las declaraciones de métodos y clases que siguen con el cuerpo definido usando las llaves.</p>'
+          java_comments:
+            lesson_contents:
+              comments:
+                content:
+                  title: 'Comentarios'
+                  desc: '<p>El propósito de incluir comentarios en su código es explicar lo que el código está haciendo.</p><p>Java admite comentarios de una o varias líneas. Todos los caracteres que aparecen dentro de un comentario son ignorados por el compilador de Java.</p><p>Un comentario de una línea comienza con dos barras inclinadas y continúa hasta el final de la línea.</p><p>Por ejemplo:</p><div><code><p>// este es un comentario de una sola línea</p><p>x = 5; // un comentario de una sola línea después del código</p></code></div><p>Añadir comentarios a medida que se escribe el código es una buena práctica, ya que proporcionan aclaración y comprensión cuando se necesita volver a consultarlo, así como para otros que puedan necesitar leerlo.</p>'
+              multiline_comments:
+                content:
+                  title: 'Comentarios multilínea'
+                  desc: '<p>Java también admite comentarios que abarcan varias líneas.<br/>Este tipo de comentario comienza con una barra inclinada seguida de un asterisco y termina con un asterisco seguido de una barra inclinada.<br/></p><p>Por ejemplo:</p><div><code><p>/* Esto también es un</p><p>comentario que abarca</p><p>varias líneas */</p></code></div><p>Tenga en cuenta que Java no admite los comentarios multilínea anidados.<br/>Sin embargo, se pueden anidar comentarios de una línea dentro de comentarios de varias líneas.</p><div><code><p>/* Este es un comentario de una sola línea:</p><p>// un comentario de una sola línea</p><p>*/</p></code></div><p>Otro nombre para un Multi-Line comment (comentario de varias líneas) es un Block comment.</p>'
+              documentation_comments:
+                content:
+                  title: 'Comentarios de documentación'
+                  desc: '<p>Los comentarios de documentación son comentarios especiales que tienen la apariencia de los comentarios de varias líneas, con la diferencia de que generan documentación externa de su código fuente. Empiezan con una barra diagonal seguida de dos asteriscos y terminan con un asterisco seguido de una barra diagonal.</p><p>Por ejemplo:</p><div><code><p>/** This is a documentation comment */</p><p>/** This is also a</p><p>documentation comment */</p></code></div><p>Javadoc es una herramienta que viene con el JDK y se utiliza para generar la documentación del código Java en formato HTML a partir del código fuente Java que tiene la documentación necesaria en un formato predefinido.</p><p>Cuando un comentario de documentación comienza con más de dos asteriscos, Javadoc asume que usted quiere crear una "caja" alrededor del comentario en el código fuente. <br/>Simplemente ignora los asteriscos adicionales.</p><p>Por ejemplo:</p><div><code><p>/**********************</p><p>Este es el inicio de un método</p><p>***********************/</p></code></div><p>Esto mantendrá sólo el texto "Este es el comienzo de un método" para la documentación.</p>'
+          variables:
+            lesson_contents:
+              variables:
+                content:
+                  title: 'Variables'
+                  desc: '<p>Las variables almacenan datos para su procesamiento.</p><p>A una variable se le asigna un nombre (o identificador), como área, edad, altura y similares. <br/>El nombre identifica de forma única cada variable, asignando un valor a la variable y recuperando el valor almacenado.</p><p>Las variables tienen tipos. Algunos ejemplos:<br/>- int: para los enteros (números enteros) como 123 y -456<br/>- double: para números de punto flotante o reales con puntos decimales opcionales y partes fraccionarias en notaciones fijas o científicas, como 3,1416, -55,66.<br/>- String: para textos como "Hola" o "¡Buenos días!". Las cadenas de texto van entre comillas dobles.</p><p>Puede declarar una variable de un tipo y asignarle un valor.</p><p>Ejemplo:</p><div><code><p>String name = "David";</p></code></div><p>Esto crea una variable llamada nombre de tipo String, y le asigna el valor "David".</p><p>Es importante tener en cuenta que una variable está asociada a un tipo, y sólo es capaz de almacenar valores de ese tipo concreto. <br/>Por ejemplo, una variable int puede almacenar valores enteros, como 123; pero no puede almacenar números reales, como 12,34, o textos, como "Hola".</p><p>Ejemplos de declaraciones de variables:</p><div><code><p>class MyClass {</p><p style="text-indent: 1%">public static void main(String[ ] args) {</p><p style="text-indent: 2%">String name ="David";</p><p style="text-indent: 2%">int age = 42;</p><p style="text-indent: 2%">double score =15.9;</p><p style="text-indent: 2%">char group = "Z";</p><p style="text-indent: 2%">}</p><p>}</p></code></div><p>char significa carácter y contiene un solo carácter.</p><p>Otro tipo es el Boolean, que sólo tiene dos valores posibles: verdadero y falso.<br/>Este tipo de datos se utiliza para banderas simples que registran condiciones verdadero/falso.</p><p>Por ejemplo:</p><div><code><p>boolean online = true;</p></code></div><p>Puede utilizar una lista separada por comas para declarar más de una variable del tipo especificado. Ejemplo: int a = 42, b = 11;</p>'
+          obtaining_user_input:
+            lesson_contents:
+              obtaining_user_input:
+                content:
+                  title: 'Obteniendo entrada del usuario'
+                  desc: '<p>Aunque Java proporciona muchos métodos diferentes para obtener la entrada del usuario, el objeto Scanner es el más común, y quizás el más fácil de implementar. </br>Importe la clase Scanner para utilizar el objeto Scanner, como se ve aquí:</p><div><code><p>import java.util.Scanner;</p></code></div><p>Para utilizar la clase Scanner, cree una instancia de la clase utilizando la siguiente sintaxis:</p><div><code><p>Scanner myVar = new Scanner(System.in);</p></code></div><p>Ahora puede leer en diferentes tipos de datos de entrada que el usuario introduce. Aquí hay algunos métodos que están disponibles a través de la clase Scanner:</p><p><ul><li>Leer un byte - nextByte()</li><li>Leer un short - nextShort()</li><li>Leer un int - nextInt()</li><li>Leer un long - nextLong()</li><li>Leer un float - nextFloat()</li><li>Leer un double - nextDouble()</li><li>Leer un boolean - nextBoolean()</li><li>Leer una línea completa - nextLine()</li><li>Leer una palabra - next()</li></ul></p><p>Ejemplo de un programa utilizado para obtener la entrada del usuario:</p><div><code><p>import java.util.Scanner;</p><br/><p>class MyClass {</p><p style="text-indent: 1%">public static void main(String[ ] args) {</p><p style="text-indent: 2%">Scanner myVar = new Scanner(System.in);</p><p style="text-indent: 2%">System.out.println(myVar.nextLine());</p><p style="text-indent: 1%">}</p><p>}</p></code></div><p>Esto esperará a que el usuario introduzca algo e imprimirá esa entrada.<br/>El código puede parecer complejo, pero lo entenderás todo en las próximas lecciones.</p>'
+          primitive_operators:
+            lesson_contents:
+              mathematical_operators:
+                content:
+                  title: 'Los operadores matemáticos'
+                  desc: '<p>Java proporciona un rico conjunto de operadores para utilizar en la manipulación de variables. Un valor utilizado en cualquier lado de un operador se llama operando.</p><p>Por ejemplo, en la expresión siguiente, los números 6 y 3 son operandos del operador más:</p><div><code><p>int x = 6 + 3;</p></code></div><p>Operadores aritméticos de Java:</p><p><ul><li>+ suma</li><li>- resta</li><li>* multiplicación</li><li>/ división</li><li>% módulo</li></ul></p><p>Los operadores aritméticos se utilizan en las expresiones matemáticas del mismo modo que en las ecuaciones algebraicas.</p>'
+              addition:
+                content:
+                  title: 'Suma'
+                  desc: '<p>El operador + suma dos valores, como dos constantes, una constante y una variable, o una variable y una variable. He aquí algunos ejemplos de adición:</p><div><code><p>int sum1 = 50 + 10;<br/>int sum2 = sum1 + 66;<br/>int sum3 = sum2 + sum2;<br/></p></code></div>'
+              subtract:
+                content:
+                  title: 'Resta'
+                  desc: '<p>El operador - resta un valor de otro.</p><div><code><p>int res1 = 1000 - 10;<br/>int res2 = res1 - 5;<br/>int res3 = res1 - res2;<br/></p></code></div>'
+              multiplication:
+                content:
+                  title: 'Multiplicación'
+                  desc: '<p>El operador * multiplica dos valores.</p><div><code><p>int mul1 = 1000 * 2;<br/>int mul2 = mul1 * 10;<br/>int mul3 = mul1 * mul2;<br/></p></code></div>'
+              division:
+                content:
+                  title: 'División'
+                  desc: '<p>El operador / divide un valor entre otro.</p><div><code><p>int div1 = 1000 / 5;<br/>int div2 = div1 / 2;<br/>int div3 = div1 / div2;<br/></p></code></div><p>En el ejemplo anterior, el resultado de la ecuación de la división será un número entero, ya que se utiliza int como tipo de datos. Puede utilizar double para recuperar un valor con un punto decimal.</p>'
+              module:
+                content:
+                  title: 'Módulo'
+                  desc: '<p>La operación matemática de módulo (o resto) realiza una división entera de un valor por otro, y devuelve el resto de esa división.<br/>El operador de la operación de módulo es el carácter de porcentaje (%).</p><p>Ejemplo</p><div><code><p>public class Program {</p><p style="text-indent: 1%">public static void main(String[] args) {</p><p style="text-indent: 2%">int value = 23;</p><p style="text-indent: 2%">int res = value % 6;</p><p style="text-indent: 2%">System.out.println(res);</p><p style="text-indent: 1%">}</p><p>}</p></code></div><p>Al dividir 23 entre 6 se obtiene un cociente de 3, con un resto de 5. Así, el valor de 5 se asigna a la variable res.</p>'
+          increase_decrease:
+            lesson_contents:
+              increment_operators:
+                content:
+                  title: 'Operadores de incremento'
+                  desc: '<p>Un operador de incremento o decremento proporciona una manera más conveniente y compacta de aumentar o disminuir el valor de una variable en uno.<br/>Por ejemplo, la sentencia x=x+1; puede simplificarse a ++x;</p><p>Ejemplo:</p><div><code><p>public class Program {</p><p style="text-indent: 1%">public static void main(String[] args) {</p><p style="text-indent: 2%">int test = 5;</p><p style="text-indent: 2%">++test;</p><p style="text-indent: 2%">System.out.println(test);</p><p style="text-indent: 1%">}</p><p>}</p></code></div><p>El operador de decremento (--) se utiliza para disminuir el valor de una variable en uno.</p><div><code><p>public class Program {</p><p style="text-indent: 1%">public static void main(String[] args) {</p><p style="text-indent: 2%">int test = 5;</p><p style="text-indent: 2%">--test;</p><p style="text-indent: 2%">System.out.println(test);</p><p style="text-indent: 1%">}</p><p>}</p></code></div><p>Utilice este operador con precaución para evitar errores de cálculo.</p>'
+              prefix_suffix:
+                content:
+                  title: 'Prefijo y sufijo'
+                  desc: '<p>Se pueden utilizar dos formas, prefijo y postfijo, con los operadores de incremento y decremento.<br/>Con la forma de prefijo, el operador aparece antes del operando, mientras que en la forma de sufijo, el operador aparece después del operando. A continuación se explica cómo funcionan las dos formas:</p><p>Prefijo: Incrementa el valor de la variable y utiliza el nuevo valor en la expresión.</p><p>Ejemplo:</p><div><code><p>public class Program {</p><p style="text-indent: 2%">public static void main(String[] args) {</p><p style="text-indent: 3%">int x = 34;</p><p style="text-indent: 3%">int y = ++x;</p><p style="text-indent: 3%">System.out.println(y);</p><p style="text-indent: 2%">}</p><p>}</p></div></code><p>El valor de x se incrementa primero a 35, y luego se asigna a y, por lo que los valores de x e y son ahora 35.</p><p>Sufijo: El valor de la variable se utiliza primero en la expresión y luego se incrementa.</p><p>Sufijo: El valor de la variable se utiliza primero en la expresión y luego se incrementa.</p><div><code><p>public class Program {</p><p style="text-indent: 2%">public static void main(String[] args) {</p><p style="text-indent: 3%">int x = 34;</p><p style="text-indent: 3%">int y = x++;</p><p style="text-indent: 3%">System.out.println(y);</p><p style="text-indent: 2%">}</p><p>}</p></div></code><p>Primero se asigna “x” a “y”, y luego se incrementa en uno. Por lo tanto, “x” se convierte en 35, mientras que a “y” se le asigna el valor de 34.</p><p>Lo mismo ocurre con el operador de decremento.</p>'
+              assignment_operators:
+                content:
+                  title: 'Operadores de asignación'
+                  desc: '<p>Ya conoce el operador de asignación (=), que asigna un valor a una variable.</p><div><code><p>int value = 5;</p></code></div><p>Esto asignó el valor 5 a una variable llamada valor de tipo int.</p><p>Java proporciona una serie de operadores de asignación para facilitar la escritura de código.</p><h4>Suma y asignación (+=):</h4><div><code><p>public class Program {</p><p style="text-indent: 1%">public static void main(String[] args) {</p><p style="text-indent: 2%">int num1 = 4;</p><p style="text-indent: 2%">int num2 = 8;</p><p style="text-indent: 2%">num2 += num1; // num2 = num2 + num1;</p><p style="text-indent: 2%">// num2 es 12 y num1 es 4</p><p style="text-indent: 2%">System.out.println(num2);</p><p style="text-indent: 1%">}</p><p>}</p></code></div><h4>Sustracción y asignación (-=):</h4><div><code><p>public class Program {</p><p style="text-indent: 1%">public static void main(String[] args) {</p><p style="text-indent: 2%">int num1 = 4;</p><p style="text-indent: 2%">int num2 = 8;</p><p style="text-indent: 2%">num2 -= num1; // num2 = num2 - num1;</p><p style="text-indent: 2%">// num2 es 4 y num1 es 4</p><p style="text-indent: 2%">System.out.println(num2);</p><p style="text-indent: 1%">}</p><p>}</p></code></div><p>Del mismo modo, Java admite la multiplicación y la asignación (*=), la división y la asignación (/=), y el resto y la asignación (%=).</p>'
+          strings:
+            lesson_contents:
+              strings:
+                content: 
+                  title: 'Strings'
+                  desc: '<p>Un string (cadena de texto) es un objeto que representa una secuencia de caracteres.</p>
+                  <p>Por ejemplo, "Hola" es una cadena de 4 caracteres.</p>
+                  <p>Por ejemplo:</p>
+                  <div><code><p>String s = "HolaMundo"; </p></code></div>
+                  <pSe permite definir una cadena vacía. Por ejemplo, String str = "";</p>
+                  '
+              string_concatenation:
+                content:
+                  title: 'Concatenación de Strings'
+                  desc: '<p>El operador + (suma) entre cadenas de texto las junta para formar una nueva cadena de texto. Este proceso se llama concatenación.<br/>La cadena de texto resultante es la primera unida a la segunda.</p><p>Por ejemplo:</p><div><code><p>public class Program {</p><p style="text-indent: 1%">public static void main(String[] args) {</p><p style="text-indent: 2%">String firstName, lastName;</p><p style="text-indent: 2%">firstName = "David";</p><p style="text-indent: 2%">lastName = "Williams";</p><p style="text-indent: 2%">System.out.println("My name is " + firstName +" "+lastName);</p><p style="text-indent: 1%">}</p><p>}</p></code></div><p>El tipo de datos char representa un solo carácter.</p>'
+      conditionals_loops:
+      arrays:
+      classes_objects:
